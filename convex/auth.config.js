@@ -1,7 +1,7 @@
 export default {
   providers: [
     {
-      domain: "https://just-mastodon-0.clerk.accounts.dev",
+      domain: "https://wonderful-scorpion-283.convex.cloud",
       applicationID: "convex",
     },
   ]
