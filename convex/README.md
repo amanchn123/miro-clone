@@ -83,7 +83,11 @@ function handleButtonPress() {
     console.log(result)
   );
 }
+
 ```
+
+Go to "settings" and add the following environment variables. `CLERK_ISSUER_URL` should be the domain in the URL from the JWKS endpoint (e.g., https://your-issuer-url.clerk.accounts.dev/).
+
 
 Use the Convex CLI to push your functions to a deployment. See everything
 the Convex CLI can do by running `npx convex -h` in your project root
