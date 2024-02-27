@@ -22,13 +22,14 @@ export const create = mutation({
   },
   handler: async (ctx, args) => {
     const identity = await ctx.auth.getUserIdentity();
-
+    console.log('identity',identity)
     if (!identity) {
       throw new Error("Unauthorized");
     }
 
     const randomImage = images[Math.floor(Math.random() * images.length)];
 
+    console.log(randomImage, "TEST")
 
     const board = await ctx.db.insert("boards", {
       title: args.title,
