@@ -1,7 +1,7 @@
 export default {
   providers: [
     {
-      domain: "https://wonderful-scorpion-283.convex.cloud",
+      domain: process.env.CLERK_JWT_ISSUER_DOMAIN,
       applicationID: "convex",
     },
   ]
